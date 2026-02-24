@@ -1,9 +1,9 @@
-# Common Issues
+# Các vấn đề thường gặp
 
 1. ## Failed to verify username
 
-    **Issue:** Some players reported having issues logging into the server, including encountering a "Failed to verify username" error.
+    **Vấn đề:** Một số người chơi báo cáo gặp sự cố khi đăng nhập vào máy chủ, bao gồm cả việc gặp lỗi "Failed to verify username".
 
-    **Cause:** This has to do with authentication, and usually with the `prevent_proxy_connections` setting.
+    **Nguyên nhân:** Vấn đề này liên quan đến xác thực, và thường liên quan đến cài đặt `prevent_proxy_connections`.
 
-    **Fix:** Disable `prevent_proxy_connections` in `features.toml`
+    **Cách khắc phục:** Tắt `prevent_proxy_connections` trong `features.toml`

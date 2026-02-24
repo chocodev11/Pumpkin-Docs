@@ -1,10 +1,10 @@
-# Basic Configuration
+# Cấu hình cơ bản
 
-Representing `configuration.toml`
+Giải thích `configuration.toml`
 
-## Server Address
+## Địa chỉ máy chủ
 
-The address to bind the server to.
+Địa chỉ để bind server.
 
 :::code-group
 
@@ -16,7 +16,7 @@ server_address = "0.0.0.0:25565"
 
 ## Seed
 
-The seed for world generation.
+Seed cho world generation..
 
 :::code-group
 
@@ -26,9 +26,9 @@ seed = ""
 
 :::
 
-## Max players
+## Số lượng người chơi tối đa
 
-The maximum number of players allowed on the server.
+Số lượng người chơi tối đa được phép trên server.
 
 :::code-group
 
@@ -40,7 +40,7 @@ max_players = 100000
 
 ## View distance
 
-The maximum view distance for players.
+View distance tối đa cho người chơi.
 
 :::code-group
 
@@ -52,7 +52,7 @@ view_distance = 10
 
 ## Simulation distance
 
-The maximum simulation distance for players.
+Simulation distance tối đa cho người chơi.
 
 :::code-group
 
@@ -62,9 +62,9 @@ simulation_distance = 10
 
 :::
 
-## Default difficulty
+## Độ khó mặc định
 
-The default game difficulty.
+Độ khó mặc định của game.
 
 :::code-group
 
@@ -81,9 +81,9 @@ Normal
 Hard
 ```
 
-## Operation permission level
+## Cấp độ quyền op
 
-The permission level assigned by the `/op` command.
+Cấp độ quyền được gán bởi lệnh `/op`.
 
 :::code-group
 
@@ -93,9 +93,9 @@ op_permission_level = 4
 
 :::
 
-## Allow nether
+## Cho phép nether
 
-Whether the Nether dimension is enabled.
+Cho phép Nether dimension.
 
 :::code-group
 
@@ -105,9 +105,9 @@ allow_nether = true
 
 :::
 
-## Allow end
+## Cho phép end
 
-Whether the End dimension is enabled.
+Cho phép End dimension.
 
 :::code-group
 
@@ -119,7 +119,7 @@ allow_end = true
 
 ## Hardcore
 
-Whether the server is in hardcore mode.
+Bật chế độ hardcore.
 
 :::code-group
 
@@ -131,7 +131,7 @@ hardcore = false
 
 ## Online Mode
 
-Whether online mode is enabled. Requires valid Minecraft accounts.
+Bật chế độ online mode. Yêu cầu tài khoản Minecraft hợp lệ.
 
 :::code-group
 
@@ -141,12 +141,12 @@ online_mode = true
 
 :::
 
-## Encryption
+## Mã hóa
 
-Whether packet encryption is enabled.
+Bật mã hóa packet.
 
-> [!IMPORTANT]
-> Required when online mode is enabled.
+> [!IMPORTANT] QUAN TRỌNG
+> Bắt buộc khi bật online mode.
 
 :::code-group
 
@@ -158,7 +158,7 @@ encryption = true
 
 ## MOTD
 
-Message of the Day; the server's description displayed on the status screen.
+Message of the Day; mô tả server hiển thị trên màn hình trạng thái.
 
 :::code-group
 
@@ -170,7 +170,7 @@ motd = "A Blazing fast Pumpkin Server!"
 
 ## TPS
 
-The server's target tick rate.
+Target tick rate của server.
 
 :::code-group
 
@@ -180,9 +180,9 @@ tps = 20.0
 
 :::
 
-## Default gamemode
+## Chế độ chơi mặc định
 
-The default game mode for players.
+Chế độ chơi mặc định cho người chơi.
 
 :::code-group
 
@@ -202,7 +202,7 @@ Spectator
 
 ## IP Scrubbing
 
-Whether to scrub players' IP addresses from logs.
+Xóa IP người chơi khỏi log.
 
 :::code-group
 
@@ -212,9 +212,9 @@ scrub_ips = true
 
 :::
 
-## Use favicon
+## Sử dụng favicon
 
-Whether to use a server favicon or not.
+Sử dụng favicon cho server.
 
 :::code-group
 
@@ -224,9 +224,9 @@ use_favicon = true
 
 :::
 
-## Favicon path
+## Đường dẫn favicon
 
-The path to the server's favicon.
+Đường dẫn đến favicon của server.
 
 :::code-group
 

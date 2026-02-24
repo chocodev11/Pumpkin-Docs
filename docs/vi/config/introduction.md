@@ -1,23 +1,23 @@
-### Configuration
+### Cấu hình
 
-Pumpkin offers a robust configuration system that allows users to customize various aspects of the server's behavior without relying on external plugins. This provides flexibility and control over the server's operation.
+Pumpkin cung cấp một hệ thống cấu hình mạnh mẽ cho phép người dùng tùy chỉnh các khía cạnh khác nhau của máy chủ mà không cần dựa vào plugin bên ngoài. Điều này mang lại sự linh hoạt và kiểm soát đối với hoạt động của server.
 
-### Basic / Advanced
+### Cơ bản / Nâng cao
 
-Pumpkin's configuration is split into a "basic" configuration made for quick changes and important changes, and a more "advanced" configuration
+Cấu hình của Pumpkin được chia thành 2 phần: "cơ bản" dành cho những thay đổi nhanh và quan trọng, và "nâng cao" dành cho những thay đổi chi tiết hơn.
 
-- `configuration.toml`: simple and can be compared to the vanilla `server.properties`.
-- `features.toml`: designed to have all features of pumpkin at one place, making it a large configuration
+- `configuration.toml`: đơn giản và có thể so sánh với `server.properties` của vanilla.
+- `features.toml`: được thiết kế để chứa tất cả các tính năng của pumpkin, khiến nó trở thành một file cấu hình lớn.
 
-### Server Version
+### Phiên bản máy chủ
 
-Pumpkin aims to support the latest Minecraft Version. If you want to host a Pumpkin server for any other version, there is a project called [ViaProxy](https://github.com/ViaVersion/ViaProxy).
+Pumpkin nhắm đến việc hỗ trợ phiên bản Minecraft mới nhất. Nếu bạn muốn thiết lập máy chủ Pumpkin cho bất kỳ phiên bản nào khác, có một dự án khác gọi là [ViaProxy](https://github.com/ViaVersion/ViaProxy).
 
-- Make sure to allow proxy connections.
-- Pumpkin and ViaProxy have no connection; don't submit issues regarding their code. Furthermore, this is a 3rd party proxy and Pumpkin does not take any responsibility for the good or the bad.
+- Hãy đảm bảo cho phép kết nối proxy.
+- Pumpkin và ViaProxy không có kết nối với nhau; đừng gửi các vấn đề liên quan đến mã của chúng. Hơn nữa, đây là một proxy của bên thứ 3 và Pumpkin không chịu trách nhiệm về bất kỳ điều gì.
 
-#### Key Features
+#### Tính năng chính
 
-- Extensive Customization: Configure server settings, player behavior, world generation, and more.
-- Performance Optimization: Optimize server performance through configuration tweaks.
-- Plugin-Free Customization: Achieve desired changes without the need for additional plugins.
+- Tùy chỉnh mạnh mẽ: Cấu hình cài đặt máy chủ, hành vi người chơi, tạo thế giới và nhiều hơn nữa.
+- Tối ưu hóa hiệu suất: Tối ưu hóa hiệu suất server thông qua các tinh chỉnh cấu hình.
+- Tùy chỉnh không cần plugin: Đạt được những thay đổi mong muốn mà không cần plugin bổ sung.

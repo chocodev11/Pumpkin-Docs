@@ -2,7 +2,7 @@ import { defineConfig } from "vitepress";
 
 export const vi = defineConfig({
     lang: "vi-VN",
-    description: "A High-performance Minecraft server software written in Rust",
+    description: "Một Minecraft server software hiệu năng cao được viết bằng Rust",
 
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
@@ -132,10 +132,10 @@ export const vi = defineConfig({
         editLink: {
             pattern:
                 "https://github.com/Pumpkin-MC/Pumpkin-Website/blob/master/docs/:path",
-            text: "Edit this page on GitHub",
+            text: "Chỉnh sửa trang này trên GitHub",
         },
         lastUpdated: {
-            text: "Updated at",
+            text: "Cập nhật vào",
             formatOptions: {
                 dateStyle: "medium",
                 timeStyle: "medium",
