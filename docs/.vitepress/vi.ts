@@ -19,7 +19,7 @@ export const vi = defineConfig({
             {
                 text: "Giới thiệu",
                 items: [
-                    { text: "Benchmarks", link: "/vi/about/benchmarks" },
+                    { text: "Benchmark", link: "/vi/about/benchmarks" },
                 ],
             },
             {
@@ -45,7 +45,7 @@ export const vi = defineConfig({
                     { text: "Cộng tác", link: "/vi/developer/contributing" },
                     { text: "Giới thiệu", link: "/vi/developer/introduction" },
                     {
-                        text: "Networking",
+                        text: "Network",
                         link: "/vi/developer/networking/networking",
                         items: [
                             {

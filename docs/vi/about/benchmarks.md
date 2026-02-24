@@ -1,31 +1,31 @@
-# Benchmarks
+# Benchmark
 
-Here, common Minecraft server software is compared against Pumpkin.
+Tại đây, các Minecraft server software thông dụng sẽ được so sánh với Pumpkin.
 
-> [!CAUTION]
-> **This comparison is unfair.** Pumpkin currently has far fewer features than other servers, which might suggest it uses fewer resources.
-> It's also important to consider that other servers have had years to optimize.
-> Vanilla forks, which don’t need to rewrite the entire Vanilla logic, can focus exclusively on optimizations.
+> [!CAUTION] CHÚ Ý
+> **So sánh này không công bằng.** Pumpkin hiện tại có ít tính năng hơn nhiều so với các server khác, điều này có thể cho thấy nó sử dụng ít tài nguyên hơn.
+> Điều quan trọng cần lưu ý là các server khác đã có nhiều năm để tối ưu hóa.
+> Các bản fork của Vanilla, không cần phải viết lại toàn bộ logic của Vanilla, có thể tập trung hoàn toàn vào tối ưu hóa.
 
-![A screenshot showing 9 Minecraft game windows](https://github.com/user-attachments/assets/e08fbb00-42fe-4479-a03b-11bb6886c91a)
+![Một screenshot hiển thị 9 cửa sổ game Minecraft](https://github.com/user-attachments/assets/e08fbb00-42fe-4479-a03b-11bb6886c91a)
 
-## Specifications
+## Thông số kĩ thuật
 
-### Technical
+### Kĩ thuật
 
-#### Software
+#### Phần mềm
 
 - Distribution: Manjaro Linux
 - Architecture: x86_64 (64-bit)
 - Kernel Version: 6.11.3-arch1-1
 
-#### Hardware
+#### Phần cứng
 
 - Motherboard: MAG B650 TOMAHAWK WIFI
 - CPU: AMD Ryzen 7600X 6-Core
 - RAM: Corsair 2x16GB DDR5 6000Mhz
 - Storage: Samsung 990 PRO 1TB PCIe 4.0 M.2 SSD
-- Cooling: be quiet Dark Rock Elite
+- Cooling: BeQuiet ! Dark Rock Elite
 
 #### Rust
 
@@ -34,27 +34,27 @@ Here, common Minecraft server software is compared against Pumpkin.
 
 #### Java
 
-- JDK Version: OpenJDK 23 64-Bit 2024-09-17
-- JRE Version: OpenJDK Runtime Environment (build 23+37)
-- Vendor: Oracle
+- Phiên bản JDK: OpenJDK 23 64-Bit 2024-09-17
+- Phiên bản JRE: OpenJDK Runtime Environment (build 23+37)
+- Nhà cung cấp: Oracle
 
 #### Game
 
-- Minecraft version: 1.21.1
+- Phiên bản Minecraft: 1.21.1
 - View distance: 10
 - Simulated distance: 10
 - Online mode: false
 - RCON: false
 
-<sub><sup>Online mode was disabled for easier testing with non-premium accounts.</sup></sub>
+<sub><sup>Online mode đã được tắt để test với acc crack dễ dàng hơn.</sup></sub>
 
-> [!NOTE]
-> All tests have been ran multiple times for more accurate results.
-> All players did not move when spawning. Only the initial 8 chunks were loaded.
-> All servers used their own terrain generation. No world was pre-loaded.
+> [!NOTE] GHI CHÚ
+> Tất cả các bài test đã được chạy nhiều lần để có kết quả chính xác hơn.
+> Tất cả người chơi không di chuyển khi spawn. Chỉ 8 chunk ban đầu được tải.
+> Tất cả các server sử dụng terrain generation của riêng mình. Không có world nào được load trước.
 
-> [!IMPORTANT]
-> `CPU Max` is usually higher with one player because the initial chunks are being loaded.
+> [!IMPORTANT] QUAN TRỌNG
+> `CPU Max` thường cao hơn với một người chơi vì các chunk ban đầu đang được tải.
 
 ## Pumpkin
 
@@ -64,30 +64,30 @@ Compile args: `--release`
 
 Run args:
 
-**File Size:** <FmtNum :n=12.3 />MB
+**Kích thước file:** <FmtNum :n=12.3 />MB
 
-**Startup time:** <FmtNum :n=8 />ms
+**Thời gian khởi động:** <FmtNum :n=8 />ms
 
-**Shutdown time:** <FmtNum :n=0 />ms
+**Thời gian tắt:** <FmtNum :n=0 />ms
 
-| Players | RAM                   | CPU Idle         | CPU Max            |
-| ------- | --------------------- | ---------------- | ------------------ |
+| Người chơi | RAM                   | CPU tĩnh        | CPU Max            |
+| ---------- | --------------------- | ---------------- | ------------------ |
 | 0       | <FmtNum :n=392.2 />KB | <FmtNum :n=0 />% | <FmtNum :n=0 />%   |
 | 1       | <FmtNum :n=24.9 />MB  | <FmtNum :n=0 />% | <FmtNum :n=4 />%   |
 | 2       | <FmtNum :n=25.1 />MB  | <FmtNum :n=0 />% | <FmtNum :n=0.6 />% |
 | 5       | <FmtNum :n=26 />MB    | <FmtNum :n=0 />% | <FmtNum :n=1 />%   |
 | 10      | <FmtNum :n=27.1 />MB  | <FmtNum :n=0 />% | <FmtNum :n=1.5 />% |
 
-<sub><sup>Pumpkin does cache already loaded chunks, resulting in no extra RAM usage besides player data and minimal CPU usage.</sup></sub>
+<sub><sup>Pumpkin cache các chunk đã tải, dẫn đến không tốn thêm RAM ngoài dữ liệu người chơi và sử dụng CPU tối thiểu.</sup></sub>
 
-### Compile time
+### Thời gian compile
 
-Compiling from nothing:
+Compile từ đầu:
 
 **Debug:** <FmtNum :n=10.35 />sec
 **Release:** <FmtNum :n=38.40 />sec
 
-Recompilation (pumpkin crate):
+Recompile (crate pumpkin):
 
 **Debug:** <FmtNum :n=1.82 />sec
 **Release:** <FmtNum :n=28.68 />sec
@@ -100,14 +100,14 @@ Compile args:
 
 Run args: `nogui`
 
-**File Size:** <FmtNum :n=51.6 />MB
+**Kích thước file:** <FmtNum :n=51.6 />MB
 
-**Startup time:** <FmtNum :n=7 />sec
+**Thời gian khởi động:** <FmtNum :n=7 />sec
 
-**Shutdown time:** <FmtNum :n=4 />sec
+**Thời gian tắt:** <FmtNum :n=4 />sec
 
-| Players | RAM                   | CPU idle                                 | CPU Max            |
-| ------- | --------------------- | ---------------------------------------- | ------------------ |
+| Người chơi | RAM                   | CPU tĩnh                                 | CPU Max            |
+| ---------- | --------------------- | ---------------------------------------- | ------------------ |
 | 0       | <FmtNum n="860" />MB  | <FmtNum n="0.1" /> - <FmtNum n="0.3" />% | <FmtNum n="51" />% |
 | 1       | <FmtNum n="1.5" />GB  | <FmtNum n="0.9" /> - <FmtNum n="1" />%   | <FmtNum n="41" />% |
 | 2       | <FmtNum n="1.6" />GB  | <FmtNum n="1" /> - <FmtNum n="1.1" />%   | <FmtNum n="10" />% |
@@ -122,14 +122,14 @@ Compile args:
 
 Run args: `nogui`
 
-**File Size:** <FmtNum :n=49.4 />MB
+**Kích thước file:** <FmtNum :n=49.4 />MB
 
-**Startup time:** <FmtNum :n=7 />sec
+**Thời gian khởi động:** <FmtNum :n=7 />sec
 
-**Shutdown time:** <FmtNum :n=3 />sec
+**Thời gian tắt:** <FmtNum :n=3 />sec
 
-| Players | RAM                 | CPU idle                               | CPU Max           |
-| ------- | ------------------- | -------------------------------------- | ----------------- |
+| Người chơi | RAM                 | CPU tĩnh                               | CPU Max           |
+| ---------- | ------------------- | -------------------------------------- | ----------------- |
 | 0       | <FmtNum :n=1.1 />GB | <FmtNum :n=0.2 /> - <FmtNum :n=0.3 />% | <FmtNum :n=36 />% |
 | 1       | <FmtNum :n=1.7 />GB | <FmtNum :n=0.9 /> - <FmtNum :n=1.0 />% | <FmtNum :n=47 />% |
 | 2       | <FmtNum :n=1.8 />GB | <FmtNum :n=1 /> - <FmtNum :n=1.1 />%   | <FmtNum :n=10 />% |
@@ -144,14 +144,14 @@ Compile args:
 
 Run args: `nogui`
 
-**File Size:** <FmtNum :n=53.1 />MB
+**Kích thước file:** <FmtNum :n=53.1 />MB
 
-**Startup time:** <FmtNum :n=8 />sec
+**Thời gian khởi động:** <FmtNum :n=8 />sec
 
-**Shutdown time:** <FmtNum :n=4 />sec
+**Thời gian tắt:** <FmtNum :n=4 />sec
 
-| Players | RAM                 | CPU idle                               | CPU Max           |
-| ------- | ------------------- | -------------------------------------- | ----------------- |
+| Người chơi | RAM                 | CPU tĩnh                               | CPU Max           |
+| ---------- | ------------------- | -------------------------------------- | ----------------- |
 | 0       | <FmtNum :n=1.4 />GB | <FmtNum :n=0.2 /> - <FmtNum :n=0.3 />% | <FmtNum :n=25 />% |
 | 1       | <FmtNum :n=1.6 />GB | <FmtNum :n=0.7 /> - <FmtNum :n=1.0 />% | <FmtNum :n=35 />% |
 | 2       | <FmtNum :n=1.7 />GB | <FmtNum :n=1.1 /> - <FmtNum :n=1.3 />% | <FmtNum :n=9 />%  |
@@ -166,22 +166,22 @@ Compile args:
 
 Run args:
 
-**Language:** Benchmarks ran with Kotlin 2.0.0 (Minestom itself is made with Java)
+**Ngôn ngữ:** Benchmarks chạy với Kotlin 2.0.0 (Minestom được viết bằng Java)
 
-**File Size:** <FmtNum :n=2.8 />MB (Library)
+**Kích thước file:** <FmtNum :n=2.8 />MB (Library)
 
-**Startup time:** <FmtNum :n=310 />ms
+**Thời gian khởi động:** <FmtNum :n=310 />ms
 
-**Shutdown time:** <FmtNum :n=0 />ms
+**Thời gian tắt:** <FmtNum :n=0 />ms
 
-<sub>[Used example code from](https://minestom.net/docs/setup/your-first-server)</sub>
+<sub>[Sử dụng code mẫu từ ](https://minestom.net/docs/setup/your-first-server)</sub>
 
-| Players | RAM                 | CPU idle                               | CPU Max          |
-| ------- | ------------------- | -------------------------------------- | ---------------- |
+| Người chơi | RAM                 | CPU tĩnh                               | CPU Max          |
+| ---------- | ------------------- | -------------------------------------- | ---------------- |
 | 0       | <FmtNum :n=228 />MB | <FmtNum :n=0.1 /> - <FmtNum :n=0.3 />% | <FmtNum :n=1 />% |
 | 1       | <FmtNum :n=365 />MB | <FmtNum :n=0.9 /> - <FmtNum :n=1.0 />% | <FmtNum :n=5 />% |
 | 2       | <FmtNum :n=371 />MB | <FmtNum :n=1 /> - <FmtNum :n=1.1 />%   | <FmtNum :n=4 />% |
 | 5       | <FmtNum :n=390 />MB | <FmtNum :n=1.0 />%                     | <FmtNum :n=6 />% |
 | 10      | <FmtNum :n=421 />MB | <FmtNum :n=3 />%                       | <FmtNum :n=9 />% |
 
-Benchmarked at <FmtDateTime :d="new Date('2024-10-15T16:34Z')" />
+Được benchmark vào <FmtDateTime :d="new Date('2024-10-15T16:34Z')" />
